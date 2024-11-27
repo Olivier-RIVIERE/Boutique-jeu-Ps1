@@ -1,70 +1,68 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Logo](../boutique/public/assets/img/1716296373896.jpg)
 
-## Available Scripts
 
-In the project directory, you can run:
+# Today's Exercise: E-Commerce Store with ReactJS and Bulma Integration 🎮
 
-### `npm start`
+In this project, I created an e-commerce store using ReactJS, featuring a responsive navigation menu and integrating the Bulma CSS framework. The store is focused on selling retro PS1 games and includes a dynamic product listing. The menu adapts for both desktop and mobile views 💻📱.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Key Features:
+Responsive Navigation Menu: Utilized React and Bulma to create a fully responsive menu with a burger icon that toggles the visibility of the navigation links in mobile view.
+Product Cards: Displayed retro PS1 games with images, descriptions, prices, and stock quantities, all fetched from a mock data array.
+Bulma CSS: Leveraged Bulma’s utility classes to style the layout, making it flexible and responsive.
+Through this project, I strengthened my skills in ReactJS component structure, state management with useState, event handling, and integrating a CSS framework (Bulma) to create a user-friendly and responsive interface.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![App Screenshot](../boutique/public/assets/img/Capture%20d'écran%202024-11-27%20162918.png)
+![App Screenshot](../boutique/public/assets/img/Capture%20d'écran%202024-11-27%20162939.png)
+![App Screenshot](../boutique/public/assets/img/Capture%20d'écran%202024-11-27%20162949.png)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Code Exemple
+```javascript
+const dataMenu = [
+  {
+    titre: "Boutique",
+    url: "#",
+  },
+  {
+    titre: "Panier",
+    url: "#",
+  },
+  {
+    titre: "Contact",
+    url: "#",
+  }
+]
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+const Navigation = () => {
+  return (
+    <nav className='navbar is-fixed-top is flex is-justify-content-space-between'>
+      {/* La props children (ici"Ceppic) sera systematiquement au format string */}
+      <div className='navbar-brand is flex is-align-items-center'>
+        <Logo>Retro Game</Logo>
+        {/* dataMenu (le 1er) est un props (un attribut)*/}
+        <div className="navbar-burger is-hidden-desktop">
+          <Burger></Burger>
+        </div>
+      </div>
+      <UlMenu dataMenu={dataMenu}></UlMenu>
+      <div className="navbar-item is-flex is-align-items-center is-justify-content-flex-start is-hidden-touch">
+        <Search></Search>
+      </div>
+    </nav>
+  )
+}
+```
+## Languages
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+HTML
+CSS
+Javascript
+React
+## License
 
-### `npm run eject`
+[MIT](https://choosealicense.com/licenses/mit/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
