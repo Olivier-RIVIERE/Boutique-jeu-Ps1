@@ -6,7 +6,6 @@ const Search = () => (
     <div className="button is-light">
       <FaSistrix />
     </div>
-
   </div>
 );
 

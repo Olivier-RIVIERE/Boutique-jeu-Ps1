@@ -2,8 +2,6 @@ import React from 'react';
 import ItemMenu from '../ItemMenu/ItemMenu';
 
 
-
-
 const UlMenu = (props) => {
   console.dir(props.dataMenu);
   return (
