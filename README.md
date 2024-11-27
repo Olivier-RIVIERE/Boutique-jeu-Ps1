@@ -1,5 +1,5 @@
 
-![Logo](assets/img/logo_perso.jpg)
+![Logo](./public/assets/img/logo_perso.jpg)
 
 
 # Today's Exercise: E-Commerce Store with ReactJS and Bulma Integration 🎮
