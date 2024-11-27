@@ -1,5 +1,5 @@
 
-![Logo](../boutique/public/assets/img/1716296373896.jpg)
+![Logo](../boutique/public/assets/img/logo_perso.jpg)
 
 
 # Today's Exercise: E-Commerce Store with ReactJS and Bulma Integration 🎮
@@ -15,9 +15,9 @@ Through this project, I strengthened my skills in ReactJS component structure, s
 
 ## Screenshots
 
-![App Screenshot](../boutique/public/assets/img/Capture%20d'écran%202024-11-27%20162918.png)
-![App Screenshot](../boutique/public/assets/img/Capture%20d'écran%202024-11-27%20162939.png)
-![App Screenshot](../boutique/public/assets/img/Capture%20d'écran%202024-11-27%20162949.png)
+![App Screenshot](../boutique/public/assets/img/Capture-ecran-1.png)
+![App Screenshot](../boutique/public/assets/img/Capture-ecran-2.png)
+![App Screenshot](../boutique/public/assets/img/Capture-ecran-3.png)
 
 
 ## Code Exemple
